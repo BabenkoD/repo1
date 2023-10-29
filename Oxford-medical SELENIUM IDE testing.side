@@ -1,0 +1,306 @@
+{
+  "id": "a29487d9-bd95-4f17-a5fb-c13294e3c03c",
+  "version": "2.0",
+  "name": "Oxford",
+  "url": "https://oxford-med.com.ua/",
+  "tests": [{
+    "id": "44a8fdbc-f802-4134-8f02-885c5cf85e65",
+    "name": "\"Go up\" button",
+    "commands": [{
+      "id": "db71267f-09b5-4068-b292-703ef968953c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "731c608a-c9e2-43b1-b964-cb1ec7e2fadf",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8080d0e3-9e0b-4ab9-aa87-d294c227d9b2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[@id='return-to-top']/i[2]",
+      "targets": [
+        ["css=.second", "css:finder"],
+        ["xpath=//a[@id='return-to-top']/i[2]", "xpath:idRelative"],
+        ["xpath=//a/i[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3072253c-704e-4aa2-921c-c168d2e8765c",
+    "name": "\"Information\" section",
+    "commands": [{
+      "id": "4c3f4645-3582-43ff-a1cf-2c7bb56dc2ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f96d67c2-e707-4d1f-8774-4c4cd434f077",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f72e1712-c01c-4367-9a05-1cc0a1776ae3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.info_head > p",
+      "targets": [
+        ["css=.info_head > p", "css:finder"],
+        ["xpath=//footer/div/div/div[3]/div/p", "xpath:position"]
+      ],
+      "value": "ІНФОРМАЦІЯ"
+    }]
+  }, {
+    "id": "f8bd4f55-d330-4205-9e19-3c83275c5162",
+    "name": "\"Показати\" word 2",
+    "commands": [{
+      "id": "79087c5e-e8db-4d22-8956-63774a29cf90",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a633dba3-f83d-48ab-9bf5-c2445b9c96c3",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0316c868-2ce1-4ddc-aece-402430ef727e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.footer_clinics:nth-child(13) .show_phone",
+      "targets": [
+        ["css=.footer_clinics:nth-child(13) .show_phone", "css:finder"],
+        ["xpath=//div[13]/p[4]/strong", "xpath:position"]
+      ],
+      "value": "ПОКАЗАТИ"
+    }, {
+      "id": "57c7664c-84b3-46f7-8140-2e2255a46794",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_clinics:nth-child(4) .show_phone",
+      "targets": [
+        ["css=.footer_clinics:nth-child(4) .show_phone", "css:finder"],
+        ["xpath=//div[4]/p[4]/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3bc6e1f-1279-405c-9719-5e14ef510263",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[4]/p[4]/strong",
+      "targets": [
+        ["css=p > .active", "css:finder"],
+        ["xpath=//div[4]/p[4]/strong", "xpath:position"]
+      ],
+      "value": "+38 (097) 204-84-84"
+    }]
+  }, {
+    "id": "c97440ea-a8e3-4067-a02b-0fe099c7ad7b",
+    "name": "Search field",
+    "commands": [{
+      "id": "571f2b66-0958-46a9-af79-13498dcafb10",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5513de0b-96b8-46c2-acbf-1d7beb220bc4",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c7468b1-dd9c-4652-8831-8daf240acbc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search > .icon-search",
+      "targets": [
+        ["css=#search > .icon-search", "css:finder"],
+        ["xpath=//a[@id='search']/i", "xpath:idRelative"],
+        ["xpath=//div[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55442729-8f96-4f03-9b97-7fe17b52ee37",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_term_string",
+      "targets": [
+        ["name=search_term_string", "name"],
+        ["css=#search-form > input", "css:finder"],
+        ["xpath=//input[@name='search_term_string']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab13d96d-eeb2-49ce-80c7-a8cb40d431fa",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_term_string",
+      "targets": [
+        ["name=search_term_string", "name"],
+        ["css=#search-form > input", "css:finder"],
+        ["xpath=//input[@name='search_term_string']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "АНАЛІЗИ"
+    }, {
+      "id": "f30eaaa1-779f-4f3e-abda-b4f603ae9a88",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .icon-search",
+      "targets": [
+        ["css=a:nth-child(2) > .icon-search", "css:finder"],
+        ["xpath=//form[@id='search-form']/a/i", "xpath:idRelative"],
+        ["xpath=//form/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7da0072f-60c3-465f-9c52-94658e25c179",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Хірургічне лікування грижі стравохідного отвору діафрагми",
+      "targets": [
+        ["linkText=Хірургічне лікування грижі стравохідного отвору діафрагми", "linkText"],
+        ["css=.result-block:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Хірургічне лікування грижі стравохідного отвору діафрагми')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://oxford-med.com.ua/ua/services/hirurgiya/hirurgicheskoe-lechenie-gryji-piscevodnogo-otverstiya-diafragmy')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Хірургічне лікування грижі стравохідного отвору діафрагми')]", "xpath:innerText"]
+      ],
+      "value": "Хірургічне лікування грижі стравохідного отвору діафрагми"
+    }, {
+      "id": "d4ddc599-5788-44aa-a636-1c05b70b5ff2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Хірургічне лікування грижі стравохідного отвору діафрагми",
+      "targets": [
+        ["linkText=Хірургічне лікування грижі стравохідного отвору діафрагми", "linkText"],
+        ["css=.result-block:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Хірургічне лікування грижі стравохідного отвору діафрагми')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://oxford-med.com.ua/ua/services/hirurgiya/hirurgicheskoe-lechenie-gryji-piscevodnogo-otverstiya-diafragmy')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Хірургічне лікування грижі стравохідного отвору діафрагми')]", "xpath:innerText"]
+      ],
+      "value": "Хірургічне лікування грижі стравохідного отвору діафрагми"
+    }]
+  }, {
+    "id": "1d36412b-db8c-4ca6-914e-4d841dceebf2",
+    "name": "Prices",
+    "commands": [{
+      "id": "382183d8-bf4b-409e-8757-b3dc130a4c5e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d1398fd-7c00-4595-9556-ec4113f8a299",
+      "comment": "",
+      "command": "open",
+      "target": "/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "508894bb-b570-49cf-b0ad-da592b63f812",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.f_left:nth-child(5) > .link_no-padding",
+      "targets": [
+        ["css=.f_left:nth-child(5) > .link_no-padding", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ціни')])[2]", "xpath:link"],
+        ["xpath=(//a[@id=''])[10]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'https://oxford-med.com.ua/ua/price/')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": "ЦІНИ"
+    }, {
+      "id": "0674fe05-0a59-4b43-bf6f-9b8fe861d8bf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=(//a[contains(text(),'Ціни')])[2]",
+      "targets": [
+        ["css=.f_left:nth-child(5) > .link_no-padding", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ціни')])[2]", "xpath:link"],
+        ["xpath=(//a[@id=''])[10]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'https://oxford-med.com.ua/ua/price/')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": "ЦІНИ"
+    }, {
+      "id": "5e0b8d46-02f6-4780-84f3-a38d151453f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.f_left:nth-child(5) > .link_no-padding",
+      "targets": [
+        ["css=.f_left:nth-child(5) > .link_no-padding", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ціни')])[2]", "xpath:link"],
+        ["xpath=(//a[@id=''])[10]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'https://oxford-med.com.ua/ua/price/')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8afd6e6b-1b40-4c93-86cf-b66a5646f889",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.f_left:nth-child(1) .name",
+      "targets": [
+        ["css=.f_left:nth-child(1) .name", "css:finder"],
+        ["xpath=//section[2]/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Алергологія')]", "xpath:innerText"]
+      ],
+      "value": "Aлергологія"
+    }, {
+      "id": "5198b52c-9e58-4cce-b5b5-3dabd3afd272",
+      "comment": "",
+      "command": "click",
+      "target": "css=.f_left:nth-child(1) .name",
+      "targets": [
+        ["css=.f_left:nth-child(1) .name", "css:finder"],
+        ["xpath=//section[2]/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Алергологія')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a30c1498-7055-488e-a8e5-0fe1516e20a7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.open td:nth-child(3)",
+      "targets": [
+        ["css=.open td:nth-child(3)", "css:finder"],
+        ["xpath=//td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'790.00 грн')]", "xpath:innerText"]
+      ],
+      "value": "790.00 грн"
+    }]
+  }],
+  "suites": [{
+    "id": "01d14b30-87e0-428e-99e2-0bbeb228966f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["44a8fdbc-f802-4134-8f02-885c5cf85e65"]
+  }],
+  "urls": ["https://oxford-med.com.ua/ua/", "https://oxford-med.com.ua/"],
+  "plugins": []
+}
